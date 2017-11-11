@@ -228,48 +228,80 @@ input[type=submit] {
 }
 
 
-/*
-@media screen and (max-width: 768px) {
-  body {
-    background-color: #333;
-  }
-*/
 
+/***  Definition for 980px screen  ***/
 @media screen and (max-width: 980px) {
 
 	.container {
 		width: 100%;
-		max-width: 700px; 
-	
-	}
-	.sidebar {
-		float: left;
+		max-width: 700px;
+		margin: 0 auto;
 		clear: both;
 	}
+
+	/*Main*/
+	#main-container {
+		padding-top: 110px;
+	}
+
+	.main-section {
+		margin-top: 25px;
+		max-width: 400px;
+	}
+
+	.auth-image {
+		width: 100%;
+	}
+
+	/*Sidebar*/
+	.sidebar {
+		margin-top: 25px;
+	}
+
+	/*  Portfolio  */
+	.work {
+		width: 100%;
+	}
+
 }
 
 
+/***  Definition for 768px screen  ***/
 @media screen and (max-width: 768px) {
 
 	.container {
-		width: 100%;
-		max-width: 640px;
-	
+		max-width: 700px;
 	}
+
+	/*Main*/
+	#main-container {
+		padding-top: 100px;
+	}
+
+	.main-section {
+		margin-top: 25px;
+		max-width: 700px;
+	}
+
+	.auth-image {
+		width: 50%;
+	}
+
+	/*Sidebar*/
 	.sidebar {
-		float: left;
-		clear: both;
+		max-width: 700px;
+		margin-top: 5px;
+	}
+
+	/*  Portfolio  */
+	.work {
+		width: 46%;
 	}
 }
 
 
+/***  Definition for 640px screen  ***/
 @media screen and (max-width: 640px) {
-
-	/*Header*/
-	#masthead {
-		margin: 0 0 20px;
-		max-width: 640px;
-	}
 
 	#logo {
 		width: 100%;
@@ -298,6 +330,7 @@ input[type=submit] {
 		margin: 20px;
 		max-width: 600px;
 	}
+
 	.auth-image {
 		width: 100%;
 	}
@@ -310,6 +343,7 @@ input[type=submit] {
 		padding: 10px 0;
 	}
 
+	/*  Portfolio  */
 	.work {
 		width: 100%;
 	}
