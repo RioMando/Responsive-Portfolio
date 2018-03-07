@@ -3,7 +3,10 @@
 }
 
 body {
-	background-image: url("../images/green_dust_scratch.png");
+	
+	/*background: linear-gradient(red, yellow);*/
+	opacity: .8;
+	background-image: url("../images/dark-triangles.png");
 	font-size: 18px;
 	line-height: 34px;
 	font-family: 'Arial', 'Helvetica Neve', Helvetica, sans-serif;
@@ -21,7 +24,7 @@ h1, h2, h3, p {
 	margin-bottom: 20px;
 }
 
-p:last-child {
+p: last-child {
 	margin-bottom: 0;
 }
 
@@ -42,6 +45,11 @@ h2, h3 {
 	font-size: 22px;
 }
 
+::placeholder {
+    color: #ccc;
+    opacity: 1; /* Firefox */
+}
+
 /******************/
 /**    Header    **/
 
@@ -58,12 +66,12 @@ h2, h3 {
 
 #logo {
 	width: 300px;
-	height: 70px;
+	height: 75px;
 	background: #4aaaa5;
     float: left;
     font-family: 'Georgia', Times, Times New Roman, serif;
     text-align: center;
-	line-height: 70px;
+	line-height: 75px;
     color: #fff;
 	font-weight: 700;
     font-size: 29px;
@@ -85,14 +93,14 @@ nav a {
 	line-height: 18px;
 }
 
-nav a:first-child {
+nav a: first-child {
 	border-left: 0 none;
 }
 
 
 /*  *** Main ***  */
 #main-container {
-	padding-top: 130px;
+	padding-top: 120px;
 }
 
 .main-section {
@@ -135,11 +143,12 @@ h3, .sidebar, h2 {
 .social {
 	width: 62px;
 	height: 62px;
-	margin-top: 8px;
-	margin-right: 5px;
+	margin: 8px 1.75px 0px 1.75px;
+	/*margin-top: 8px;
+	margin-right: 3.5px;*/
 }
 
-.social:last-child {
+.social: last-child {
 	margin-right: 0;
 }
 
